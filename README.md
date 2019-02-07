@@ -2,7 +2,7 @@
 
 Experimenting using the Solid platform in iOS.  Success is when the app retrieves an access token, id token and refresh token after authenticating with a provider.
 
-The tokenrequest contains a key for exchange with a proof-of-possession (PoP) confirmation.  Solid-server does not yet have the functionality to load the confirmation into its internal request object.  An issues has been raised.
+The tokenrequest contains a key for exchange with a proof-of-possession (PoP) confirmation.  Solid-server does not yet have the functionality to load the confirmation into its internal request object.  An issue has been raised.
 
 ## Use case
 ### Authenticate with provider
