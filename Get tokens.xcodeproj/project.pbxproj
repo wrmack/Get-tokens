@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4183E917220C911D001FA27B /* PresentationAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183E916220C911D001FA27B /* PresentationAttributes.swift */; };
+		41C0AF002203B45900C5CE4A /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0AEFF2203B45900C5CE4A /* AnyCodable.swift */; };
+		41C0AF022203B46200C5CE4A /* AnyDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0AF012203B46200C5CE4A /* AnyDecodable.swift */; };
+		41C0AF042203B46E00C5CE4A /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0AF032203B46E00C5CE4A /* AnyEncodable.swift */; };
+		41C5009921FF635C00313BD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C5009721FF635C00313BD1 /* Main.storyboard */; };
+		41C5009B21FF635E00313BD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C5009A21FF635E00313BD1 /* Assets.xcassets */; };
+		41C5009E21FF635E00313BD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C5009C21FF635E00313BD1 /* LaunchScreen.storyboard */; };
+		41C500AA21FF638C00313BD1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 41C500A521FF638B00313BD1 /* README.md */; };
+		41C500AB21FF638C00313BD1 /* Authenticate with PoP tokens.md in Resources */ = {isa = PBXBuildFile; fileRef = 41C500A621FF638C00313BD1 /* Authenticate with PoP tokens.md */; };
+		41C500AC21FF638C00313BD1 /* Design.md in Resources */ = {isa = PBXBuildFile; fileRef = 41C500A721FF638C00313BD1 /* Design.md */; };
+		41C500AD21FF638C00313BD1 /* WebID-OIDC.md in Resources */ = {isa = PBXBuildFile; fileRef = 41C500A821FF638C00313BD1 /* WebID-OIDC.md */; };
+		41C500AE21FF638C00313BD1 /* Authenticate using basic OIDC.md in Resources */ = {isa = PBXBuildFile; fileRef = 41C500A921FF638C00313BD1 /* Authenticate using basic OIDC.md */; };
+		41C500B021FF63BB00313BD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500AF21FF63BB00313BD1 /* ViewController.swift */; };
+		41C500B221FF63E400313BD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500B121FF63E400313BD1 /* AppDelegate.swift */; };
+		41C5010721FF645800313BD1 /* JWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500B721FF645700313BD1 /* JWS.swift */; };
+		41C5010821FF645800313BD1 /* Verifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500B821FF645700313BD1 /* Verifier.swift */; };
+		41C5010921FF645800313BD1 /* Signer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500B921FF645700313BD1 /* Signer.swift */; };
+		41C5010A21FF645800313BD1 /* JWSHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500BA21FF645700313BD1 /* JWSHeader.swift */; };
+		41C5010B21FF645800313BD1 /* AESDecrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500BC21FF645700313BD1 /* AESDecrypter.swift */; };
+		41C5010C21FF645800313BD1 /* RSAEncrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500BD21FF645700313BD1 /* RSAEncrypter.swift */; };
+		41C5010D21FF645800313BD1 /* ECSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500BE21FF645700313BD1 /* ECSigner.swift */; };
+		41C5010E21FF645800313BD1 /* RSADecrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500BF21FF645700313BD1 /* RSADecrypter.swift */; };
+		41C5010F21FF645800313BD1 /* RSASigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500C021FF645700313BD1 /* RSASigner.swift */; };
+		41C5011021FF645800313BD1 /* AESEncrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500C121FF645700313BD1 /* AESEncrypter.swift */; };
+		41C5011121FF645800313BD1 /* RSAVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500C221FF645700313BD1 /* RSAVerifier.swift */; };
+		41C5011221FF645800313BD1 /* ECVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500C321FF645700313BD1 /* ECVerifier.swift */; };
+		41C5011321FF645800313BD1 /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500C521FF645700313BD1 /* RSA.swift */; };
+		41C5011421FF645800313BD1 /* SecKeyECPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500C621FF645700313BD1 /* SecKeyECPrivateKey.swift */; };
+		41C5011521FF645800313BD1 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500C721FF645700313BD1 /* AES.swift */; };
+		41C5011621FF645800313BD1 /* SecKeyECPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500C821FF645700313BD1 /* SecKeyECPublicKey.swift */; };
+		41C5011721FF645800313BD1 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500C921FF645700313BD1 /* HMAC.swift */; };
+		41C5011821FF645800313BD1 /* DataECPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500CA21FF645700313BD1 /* DataECPrivateKey.swift */; };
+		41C5011921FF645800313BD1 /* SecureRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500CB21FF645700313BD1 /* SecureRandom.swift */; };
+		41C5011A21FF645800313BD1 /* EC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500CC21FF645700313BD1 /* EC.swift */; };
+		41C5011B21FF645800313BD1 /* DataSymmetricKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500CD21FF645700313BD1 /* DataSymmetricKey.swift */; };
+		41C5011C21FF645800313BD1 /* DataRSAPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500CE21FF645700313BD1 /* DataRSAPublicKey.swift */; };
+		41C5011D21FF645800313BD1 /* DataECPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500CF21FF645700313BD1 /* DataECPublicKey.swift */; };
+		41C5011E21FF645800313BD1 /* SecKeyRSAPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500D021FF645700313BD1 /* SecKeyRSAPublicKey.swift */; };
+		41C5011F21FF645800313BD1 /* RSAKeyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500D221FF645700313BD1 /* RSAKeyCodable.swift */; };
+		41C5012021FF645800313BD1 /* SymmetricKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500D321FF645700313BD1 /* SymmetricKeys.swift */; };
+		41C5012121FF645800313BD1 /* JWKSetCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500D421FF645700313BD1 /* JWKSetCodable.swift */; };
+		41C5012221FF645800313BD1 /* ECKeyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500D521FF645700313BD1 /* ECKeyCodable.swift */; };
+		41C5012321FF645800313BD1 /* JWK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500D621FF645700313BD1 /* JWK.swift */; };
+		41C5012421FF645800313BD1 /* ASN1DERParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500D721FF645700313BD1 /* ASN1DERParsing.swift */; };
+		41C5012521FF645800313BD1 /* RSAKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500D821FF645700313BD1 /* RSAKeys.swift */; };
+		41C5012621FF645800313BD1 /* SymmetricKeyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500D921FF645700313BD1 /* SymmetricKeyCodable.swift */; };
+		41C5012721FF645800313BD1 /* JWKParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500DA21FF645700313BD1 /* JWKParameters.swift */; };
+		41C5012821FF645800313BD1 /* ECKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500DB21FF645700313BD1 /* ECKeys.swift */; };
+		41C5012921FF645800313BD1 /* JWKSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500DC21FF645700313BD1 /* JWKSet.swift */; };
+		41C5012A21FF645800313BD1 /* JWKExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500DD21FF645700313BD1 /* JWKExtensions.swift */; };
+		41C5012B21FF645800313BD1 /* ASN1DEREncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500DE21FF645700313BD1 /* ASN1DEREncoding.swift */; };
+		41C5012C21FF645800313BD1 /* Encrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500E021FF645700313BD1 /* Encrypter.swift */; };
+		41C5012D21FF645800313BD1 /* Decrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500E121FF645700313BD1 /* Decrypter.swift */; };
+		41C5012E21FF645800313BD1 /* JWE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500E221FF645700313BD1 /* JWE.swift */; };
+		41C5012F21FF645800313BD1 /* JWEHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500E321FF645700313BD1 /* JWEHeader.swift */; };
+		41C5013021FF645800313BD1 /* DataConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500E521FF645700313BD1 /* DataConvertible.swift */; };
+		41C5013121FF645800313BD1 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500E621FF645700313BD1 /* DataExtensions.swift */; };
+		41C5013221FF645800313BD1 /* JOSESwiftError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500E721FF645700313BD1 /* JOSESwiftError.swift */; };
+		41C5013321FF645800313BD1 /* Algorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500E821FF645700313BD1 /* Algorithms.swift */; };
+		41C5013421FF645800313BD1 /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500E921FF645700313BD1 /* Deserializer.swift */; };
+		41C5013521FF645800313BD1 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500EA21FF645700313BD1 /* Payload.swift */; };
+		41C5013621FF645800313BD1 /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500EB21FF645700313BD1 /* Serializer.swift */; };
+		41C5013721FF645800313BD1 /* JOSEHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500EC21FF645700313BD1 /* JOSEHeader.swift */; };
+		41C5013821FF645800313BD1 /* AuthenticateWithProviderWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500ED21FF645700313BD1 /* AuthenticateWithProviderWorker.swift */; };
+		41C5013921FF645800313BD1 /* AuthenticateWithProviderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500EE21FF645700313BD1 /* AuthenticateWithProviderPresenter.swift */; };
+		41C5013A21FF645800313BD1 /* AuthenticateWithProviderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500EF21FF645700313BD1 /* AuthenticateWithProviderRouter.swift */; };
+		41C5013B21FF645800313BD1 /* AuthenticateWithProviderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500F021FF645700313BD1 /* AuthenticateWithProviderModels.swift */; };
+		41C5013C21FF645800313BD1 /* PoPToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500F221FF645700313BD1 /* PoPToken.swift */; };
+		41C5013D21FF645800313BD1 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500F321FF645700313BD1 /* AccessToken.swift */; };
+		41C5013E21FF645800313BD1 /* IDToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500F421FF645700313BD1 /* IDToken.swift */; };
+		41C5013F21FF645800313BD1 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500F521FF645700313BD1 /* AuthState.swift */; };
+		41C5014021FF645800313BD1 /* ProviderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500F621FF645700313BD1 /* ProviderConfiguration.swift */; };
+		41C5014121FF645800313BD1 /* AuthenticateWithProviderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500F721FF645700313BD1 /* AuthenticateWithProviderInteractor.swift */; };
+		41C5014221FF645800313BD1 /* AuthenticateWithProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500F821FF645700313BD1 /* AuthenticateWithProviderViewController.swift */; };
+		41C5014321FF645800313BD1 /* RegistrationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500FA21FF645700313BD1 /* RegistrationRequest.swift */; };
+		41C5014421FF645800313BD1 /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500FB21FF645700313BD1 /* TokenRequest.swift */; };
+		41C5014521FF645800313BD1 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500FC21FF645700313BD1 /* TokenResponse.swift */; };
+		41C5014621FF645800313BD1 /* AuthorizationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500FD21FF645700313BD1 /* AuthorizationResponse.swift */; };
+		41C5014721FF645800313BD1 /* AuthorizationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500FE21FF645700313BD1 /* AuthorizationRequest.swift */; };
+		41C5014821FF645800313BD1 /* AuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500FF21FF645700313BD1 /* AuthenticationSession.swift */; };
+		41C5014921FF645800313BD1 /* ErrorUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5010121FF645700313BD1 /* ErrorUtilities.swift */; };
+		41C5014A21FF645800313BD1 /* QueryUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5010221FF645700313BD1 /* QueryUtilities.swift */; };
+		41C5014B21FF645800313BD1 /* ScopeUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5010321FF645700313BD1 /* ScopeUtilities.swift */; };
+		41C5014C21FF645800313BD1 /* TokenUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5010421FF645700313BD1 /* TokenUtilities.swift */; };
+		41C5014D21FF645800313BD1 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5010521FF645700313BD1 /* TokenManager.swift */; };
+		41C5014E21FF645800313BD1 /* RegistrationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5010621FF645800313BD1 /* RegistrationResponse.swift */; };
+		41C5015621FF64B300313BD1 /* CreatePasteBinModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5015021FF64B300313BD1 /* CreatePasteBinModels.swift */; };
+		41C5015721FF64B300313BD1 /* CreatePasteBinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5015121FF64B300313BD1 /* CreatePasteBinRouter.swift */; };
+		41C5015821FF64B300313BD1 /* CreatePasteBinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5015221FF64B300313BD1 /* CreatePasteBinPresenter.swift */; };
+		41C5015921FF64B300313BD1 /* CreatePasteBinWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5015321FF64B300313BD1 /* CreatePasteBinWorker.swift */; };
+		41C5015A21FF64B300313BD1 /* CreatePasteBinInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5015421FF64B300313BD1 /* CreatePasteBinInteractor.swift */; };
+		41C5015B21FF64B300313BD1 /* CreatePasteBinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C5015521FF64B300313BD1 /* CreatePasteBinViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4183E916220C911D001FA27B /* PresentationAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationAttributes.swift; sourceTree = "<group>"; };
+		41C0AEFF2203B45900C5CE4A /* AnyCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
+		41C0AF012203B46200C5CE4A /* AnyDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyDecodable.swift; sourceTree = "<group>"; };
+		41C0AF032203B46E00C5CE4A /* AnyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
+		41C5009021FF635C00313BD1 /* Get tokens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get tokens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C5009821FF635C00313BD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41C5009A21FF635E00313BD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41C5009D21FF635E00313BD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41C5009F21FF635E00313BD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41C500A521FF638B00313BD1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		41C500A621FF638C00313BD1 /* Authenticate with PoP tokens.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Authenticate with PoP tokens.md"; sourceTree = "<group>"; };
+		41C500A721FF638C00313BD1 /* Design.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Design.md; sourceTree = "<group>"; };
+		41C500A821FF638C00313BD1 /* WebID-OIDC.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "WebID-OIDC.md"; sourceTree = "<group>"; };
+		41C500A921FF638C00313BD1 /* Authenticate using basic OIDC.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Authenticate using basic OIDC.md"; sourceTree = "<group>"; };
+		41C500AF21FF63BB00313BD1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../../../../../../Solid/POD browser/POD browser/ViewController.swift"; sourceTree = "<group>"; };
+		41C500B121FF63E400313BD1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41C500B721FF645700313BD1 /* JWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWS.swift; sourceTree = "<group>"; };
+		41C500B821FF645700313BD1 /* Verifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Verifier.swift; sourceTree = "<group>"; };
+		41C500B921FF645700313BD1 /* Signer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signer.swift; sourceTree = "<group>"; };
+		41C500BA21FF645700313BD1 /* JWSHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWSHeader.swift; sourceTree = "<group>"; };
+		41C500BC21FF645700313BD1 /* AESDecrypter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AESDecrypter.swift; sourceTree = "<group>"; };
+		41C500BD21FF645700313BD1 /* RSAEncrypter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSAEncrypter.swift; sourceTree = "<group>"; };
+		41C500BE21FF645700313BD1 /* ECSigner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECSigner.swift; sourceTree = "<group>"; };
+		41C500BF21FF645700313BD1 /* RSADecrypter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSADecrypter.swift; sourceTree = "<group>"; };
+		41C500C021FF645700313BD1 /* RSASigner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSASigner.swift; sourceTree = "<group>"; };
+		41C500C121FF645700313BD1 /* AESEncrypter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AESEncrypter.swift; sourceTree = "<group>"; };
+		41C500C221FF645700313BD1 /* RSAVerifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSAVerifier.swift; sourceTree = "<group>"; };
+		41C500C321FF645700313BD1 /* ECVerifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECVerifier.swift; sourceTree = "<group>"; };
+		41C500C521FF645700313BD1 /* RSA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSA.swift; sourceTree = "<group>"; };
+		41C500C621FF645700313BD1 /* SecKeyECPrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecKeyECPrivateKey.swift; sourceTree = "<group>"; };
+		41C500C721FF645700313BD1 /* AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
+		41C500C821FF645700313BD1 /* SecKeyECPublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecKeyECPublicKey.swift; sourceTree = "<group>"; };
+		41C500C921FF645700313BD1 /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+		41C500CA21FF645700313BD1 /* DataECPrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataECPrivateKey.swift; sourceTree = "<group>"; };
+		41C500CB21FF645700313BD1 /* SecureRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureRandom.swift; sourceTree = "<group>"; };
+		41C500CC21FF645700313BD1 /* EC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EC.swift; sourceTree = "<group>"; };
+		41C500CD21FF645700313BD1 /* DataSymmetricKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSymmetricKey.swift; sourceTree = "<group>"; };
+		41C500CE21FF645700313BD1 /* DataRSAPublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRSAPublicKey.swift; sourceTree = "<group>"; };
+		41C500CF21FF645700313BD1 /* DataECPublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataECPublicKey.swift; sourceTree = "<group>"; };
+		41C500D021FF645700313BD1 /* SecKeyRSAPublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecKeyRSAPublicKey.swift; sourceTree = "<group>"; };
+		41C500D221FF645700313BD1 /* RSAKeyCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSAKeyCodable.swift; sourceTree = "<group>"; };
+		41C500D321FF645700313BD1 /* SymmetricKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymmetricKeys.swift; sourceTree = "<group>"; };
+		41C500D421FF645700313BD1 /* JWKSetCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWKSetCodable.swift; sourceTree = "<group>"; };
+		41C500D521FF645700313BD1 /* ECKeyCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECKeyCodable.swift; sourceTree = "<group>"; };
+		41C500D621FF645700313BD1 /* JWK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWK.swift; sourceTree = "<group>"; };
+		41C500D721FF645700313BD1 /* ASN1DERParsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASN1DERParsing.swift; sourceTree = "<group>"; };
+		41C500D821FF645700313BD1 /* RSAKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSAKeys.swift; sourceTree = "<group>"; };
+		41C500D921FF645700313BD1 /* SymmetricKeyCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymmetricKeyCodable.swift; sourceTree = "<group>"; };
+		41C500DA21FF645700313BD1 /* JWKParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWKParameters.swift; sourceTree = "<group>"; };
+		41C500DB21FF645700313BD1 /* ECKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECKeys.swift; sourceTree = "<group>"; };
+		41C500DC21FF645700313BD1 /* JWKSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWKSet.swift; sourceTree = "<group>"; };
+		41C500DD21FF645700313BD1 /* JWKExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWKExtensions.swift; sourceTree = "<group>"; };
+		41C500DE21FF645700313BD1 /* ASN1DEREncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASN1DEREncoding.swift; sourceTree = "<group>"; };
+		41C500E021FF645700313BD1 /* Encrypter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encrypter.swift; sourceTree = "<group>"; };
+		41C500E121FF645700313BD1 /* Decrypter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decrypter.swift; sourceTree = "<group>"; };
+		41C500E221FF645700313BD1 /* JWE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWE.swift; sourceTree = "<group>"; };
+		41C500E321FF645700313BD1 /* JWEHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWEHeader.swift; sourceTree = "<group>"; };
+		41C500E521FF645700313BD1 /* DataConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataConvertible.swift; sourceTree = "<group>"; };
+		41C500E621FF645700313BD1 /* DataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		41C500E721FF645700313BD1 /* JOSESwiftError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JOSESwiftError.swift; sourceTree = "<group>"; };
+		41C500E821FF645700313BD1 /* Algorithms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Algorithms.swift; sourceTree = "<group>"; };
+		41C500E921FF645700313BD1 /* Deserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
+		41C500EA21FF645700313BD1 /* Payload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
+		41C500EB21FF645700313BD1 /* Serializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
+		41C500EC21FF645700313BD1 /* JOSEHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JOSEHeader.swift; sourceTree = "<group>"; };
+		41C500ED21FF645700313BD1 /* AuthenticateWithProviderWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateWithProviderWorker.swift; sourceTree = "<group>"; };
+		41C500EE21FF645700313BD1 /* AuthenticateWithProviderPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateWithProviderPresenter.swift; sourceTree = "<group>"; };
+		41C500EF21FF645700313BD1 /* AuthenticateWithProviderRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateWithProviderRouter.swift; sourceTree = "<group>"; };
+		41C500F021FF645700313BD1 /* AuthenticateWithProviderModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateWithProviderModels.swift; sourceTree = "<group>"; };
+		41C500F221FF645700313BD1 /* PoPToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoPToken.swift; sourceTree = "<group>"; };
+		41C500F321FF645700313BD1 /* AccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		41C500F421FF645700313BD1 /* IDToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDToken.swift; sourceTree = "<group>"; };
+		41C500F521FF645700313BD1 /* AuthState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		41C500F621FF645700313BD1 /* ProviderConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderConfiguration.swift; sourceTree = "<group>"; };
+		41C500F721FF645700313BD1 /* AuthenticateWithProviderInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateWithProviderInteractor.swift; sourceTree = "<group>"; };
+		41C500F821FF645700313BD1 /* AuthenticateWithProviderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateWithProviderViewController.swift; sourceTree = "<group>"; };
+		41C500FA21FF645700313BD1 /* RegistrationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationRequest.swift; sourceTree = "<group>"; };
+		41C500FB21FF645700313BD1 /* TokenRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
+		41C500FC21FF645700313BD1 /* TokenResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
+		41C500FD21FF645700313BD1 /* AuthorizationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationResponse.swift; sourceTree = "<group>"; };
+		41C500FE21FF645700313BD1 /* AuthorizationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationRequest.swift; sourceTree = "<group>"; };
+		41C500FF21FF645700313BD1 /* AuthenticationSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationSession.swift; sourceTree = "<group>"; };
+		41C5010121FF645700313BD1 /* ErrorUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorUtilities.swift; sourceTree = "<group>"; };
+		41C5010221FF645700313BD1 /* QueryUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryUtilities.swift; sourceTree = "<group>"; };
+		41C5010321FF645700313BD1 /* ScopeUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeUtilities.swift; sourceTree = "<group>"; };
+		41C5010421FF645700313BD1 /* TokenUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenUtilities.swift; sourceTree = "<group>"; };
+		41C5010521FF645700313BD1 /* TokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		41C5010621FF645800313BD1 /* RegistrationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationResponse.swift; sourceTree = "<group>"; };
+		41C5015021FF64B300313BD1 /* CreatePasteBinModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePasteBinModels.swift; sourceTree = "<group>"; };
+		41C5015121FF64B300313BD1 /* CreatePasteBinRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePasteBinRouter.swift; sourceTree = "<group>"; };
+		41C5015221FF64B300313BD1 /* CreatePasteBinPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePasteBinPresenter.swift; sourceTree = "<group>"; };
+		41C5015321FF64B300313BD1 /* CreatePasteBinWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePasteBinWorker.swift; sourceTree = "<group>"; };
+		41C5015421FF64B300313BD1 /* CreatePasteBinInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePasteBinInteractor.swift; sourceTree = "<group>"; };
+		41C5015521FF64B300313BD1 /* CreatePasteBinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePasteBinViewController.swift; sourceTree = "<group>"; };
+		41D5EF19220B397B006BE3B7 /* Debugging setup.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Debugging setup.md"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41C5008D21FF635C00313BD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41C0AEFE2203B43E00C5CE4A /* AnyCodable library */ = {
+			isa = PBXGroup;
+			children = (
+				41C0AEFF2203B45900C5CE4A /* AnyCodable.swift */,
+				41C0AF012203B46200C5CE4A /* AnyDecodable.swift */,
+				41C0AF032203B46E00C5CE4A /* AnyEncodable.swift */,
+			);
+			path = "AnyCodable library";
+			sourceTree = "<group>";
+		};
+		41C5008721FF635C00313BD1 = {
+			isa = PBXGroup;
+			children = (
+				41D5EF19220B397B006BE3B7 /* Debugging setup.md */,
+				41C500A921FF638C00313BD1 /* Authenticate using basic OIDC.md */,
+				41C500A621FF638C00313BD1 /* Authenticate with PoP tokens.md */,
+				41C500A721FF638C00313BD1 /* Design.md */,
+				41C500A521FF638B00313BD1 /* README.md */,
+				41C500A821FF638C00313BD1 /* WebID-OIDC.md */,
+				41C5009221FF635C00313BD1 /* Get tokens */,
+				41C500B321FF644500313BD1 /* Use cases */,
+				41C5009121FF635C00313BD1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41C5009121FF635C00313BD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41C5009021FF635C00313BD1 /* Get tokens.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41C5009221FF635C00313BD1 /* Get tokens */ = {
+			isa = PBXGroup;
+			children = (
+				41C500B121FF63E400313BD1 /* AppDelegate.swift */,
+				41C500AF21FF63BB00313BD1 /* ViewController.swift */,
+				41C5009721FF635C00313BD1 /* Main.storyboard */,
+				41C5009A21FF635E00313BD1 /* Assets.xcassets */,
+				41C5009C21FF635E00313BD1 /* LaunchScreen.storyboard */,
+				41C5009F21FF635E00313BD1 /* Info.plist */,
+			);
+			path = "Get tokens";
+			sourceTree = "<group>";
+		};
+		41C500B321FF644500313BD1 /* Use cases */ = {
+			isa = PBXGroup;
+			children = (
+				41C500B421FF645700313BD1 /* Authenticate with provider */,
+				41C5014F21FF64B300313BD1 /* Create pastebin */,
+			);
+			path = "Use cases";
+			sourceTree = "<group>";
+		};
+		41C500B421FF645700313BD1 /* Authenticate with provider */ = {
+			isa = PBXGroup;
+			children = (
+				41C0AEFE2203B43E00C5CE4A /* AnyCodable library */,
+				41C500B521FF645700313BD1 /* JOSE library */,
+				41C500F121FF645700313BD1 /* Models */,
+				41C500F921FF645700313BD1 /* Workers */,
+				41C500F821FF645700313BD1 /* AuthenticateWithProviderViewController.swift */,
+				41C500F721FF645700313BD1 /* AuthenticateWithProviderInteractor.swift */,
+				41C500EE21FF645700313BD1 /* AuthenticateWithProviderPresenter.swift */,
+				41C500ED21FF645700313BD1 /* AuthenticateWithProviderWorker.swift */,
+				41C500EF21FF645700313BD1 /* AuthenticateWithProviderRouter.swift */,
+				41C500F021FF645700313BD1 /* AuthenticateWithProviderModels.swift */,
+			);
+			path = "Authenticate with provider";
+			sourceTree = "<group>";
+		};
+		41C500B521FF645700313BD1 /* JOSE library */ = {
+			isa = PBXGroup;
+			children = (
+				41C500BB21FF645700313BD1 /* CryptoInterface */,
+				41C500C421FF645700313BD1 /* CryptoImplementation */,
+				41C500E421FF645700313BD1 /* Common */,
+				41C500B621FF645700313BD1 /* JWS */,
+				41C500D121FF645700313BD1 /* JWK */,
+				41C500DF21FF645700313BD1 /* JWE */,
+			);
+			path = "JOSE library";
+			sourceTree = "<group>";
+		};
+		41C500B621FF645700313BD1 /* JWS */ = {
+			isa = PBXGroup;
+			children = (
+				41C500B721FF645700313BD1 /* JWS.swift */,
+				41C500B821FF645700313BD1 /* Verifier.swift */,
+				41C500B921FF645700313BD1 /* Signer.swift */,
+				41C500BA21FF645700313BD1 /* JWSHeader.swift */,
+			);
+			path = JWS;
+			sourceTree = "<group>";
+		};
+		41C500BB21FF645700313BD1 /* CryptoInterface */ = {
+			isa = PBXGroup;
+			children = (
+				41C500C121FF645700313BD1 /* AESEncrypter.swift */,
+				41C500BC21FF645700313BD1 /* AESDecrypter.swift */,
+				41C500BD21FF645700313BD1 /* RSAEncrypter.swift */,
+				41C500BF21FF645700313BD1 /* RSADecrypter.swift */,
+				41C500C021FF645700313BD1 /* RSASigner.swift */,
+				41C500C221FF645700313BD1 /* RSAVerifier.swift */,
+				41C500BE21FF645700313BD1 /* ECSigner.swift */,
+				41C500C321FF645700313BD1 /* ECVerifier.swift */,
+			);
+			path = CryptoInterface;
+			sourceTree = "<group>";
+		};
+		41C500C421FF645700313BD1 /* CryptoImplementation */ = {
+			isa = PBXGroup;
+			children = (
+				41C500C521FF645700313BD1 /* RSA.swift */,
+				41C500C721FF645700313BD1 /* AES.swift */,
+				41C500CC21FF645700313BD1 /* EC.swift */,
+				41C500C921FF645700313BD1 /* HMAC.swift */,
+				41C500CE21FF645700313BD1 /* DataRSAPublicKey.swift */,
+				41C500D021FF645700313BD1 /* SecKeyRSAPublicKey.swift */,
+				41C500C621FF645700313BD1 /* SecKeyECPrivateKey.swift */,
+				41C500C821FF645700313BD1 /* SecKeyECPublicKey.swift */,
+				41C500CF21FF645700313BD1 /* DataECPublicKey.swift */,
+				41C500CA21FF645700313BD1 /* DataECPrivateKey.swift */,
+				41C500CD21FF645700313BD1 /* DataSymmetricKey.swift */,
+				41C500CB21FF645700313BD1 /* SecureRandom.swift */,
+			);
+			path = CryptoImplementation;
+			sourceTree = "<group>";
+		};
+		41C500D121FF645700313BD1 /* JWK */ = {
+			isa = PBXGroup;
+			children = (
+				41C500D621FF645700313BD1 /* JWK.swift */,
+				41C500DC21FF645700313BD1 /* JWKSet.swift */,
+				41C500D421FF645700313BD1 /* JWKSetCodable.swift */,
+				41C500DA21FF645700313BD1 /* JWKParameters.swift */,
+				41C500DD21FF645700313BD1 /* JWKExtensions.swift */,
+				41C500D821FF645700313BD1 /* RSAKeys.swift */,
+				41C500D221FF645700313BD1 /* RSAKeyCodable.swift */,
+				41C500DB21FF645700313BD1 /* ECKeys.swift */,
+				41C500D521FF645700313BD1 /* ECKeyCodable.swift */,
+				41C500D321FF645700313BD1 /* SymmetricKeys.swift */,
+				41C500D921FF645700313BD1 /* SymmetricKeyCodable.swift */,
+				41C500D721FF645700313BD1 /* ASN1DERParsing.swift */,
+				41C500DE21FF645700313BD1 /* ASN1DEREncoding.swift */,
+			);
+			path = JWK;
+			sourceTree = "<group>";
+		};
+		41C500DF21FF645700313BD1 /* JWE */ = {
+			isa = PBXGroup;
+			children = (
+				41C500E021FF645700313BD1 /* Encrypter.swift */,
+				41C500E121FF645700313BD1 /* Decrypter.swift */,
+				41C500E221FF645700313BD1 /* JWE.swift */,
+				41C500E321FF645700313BD1 /* JWEHeader.swift */,
+			);
+			path = JWE;
+			sourceTree = "<group>";
+		};
+		41C500E421FF645700313BD1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				41C500EC21FF645700313BD1 /* JOSEHeader.swift */,
+				41C500EA21FF645700313BD1 /* Payload.swift */,
+				41C500E521FF645700313BD1 /* DataConvertible.swift */,
+				41C500E621FF645700313BD1 /* DataExtensions.swift */,
+				41C500E721FF645700313BD1 /* JOSESwiftError.swift */,
+				41C500E821FF645700313BD1 /* Algorithms.swift */,
+				41C500EB21FF645700313BD1 /* Serializer.swift */,
+				41C500E921FF645700313BD1 /* Deserializer.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		41C500F121FF645700313BD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41C500F521FF645700313BD1 /* AuthState.swift */,
+				41C500F621FF645700313BD1 /* ProviderConfiguration.swift */,
+				41C500F221FF645700313BD1 /* PoPToken.swift */,
+				41C500F321FF645700313BD1 /* AccessToken.swift */,
+				41C500F421FF645700313BD1 /* IDToken.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		41C500F921FF645700313BD1 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				41C500FA21FF645700313BD1 /* RegistrationRequest.swift */,
+				41C5010621FF645800313BD1 /* RegistrationResponse.swift */,
+				41C500FE21FF645700313BD1 /* AuthorizationRequest.swift */,
+				41C500FD21FF645700313BD1 /* AuthorizationResponse.swift */,
+				41C500FB21FF645700313BD1 /* TokenRequest.swift */,
+				41C500FC21FF645700313BD1 /* TokenResponse.swift */,
+				41C500FF21FF645700313BD1 /* AuthenticationSession.swift */,
+				41C5010521FF645700313BD1 /* TokenManager.swift */,
+				41C5010021FF645700313BD1 /* Utilities */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		41C5010021FF645700313BD1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				41C5010121FF645700313BD1 /* ErrorUtilities.swift */,
+				41C5010221FF645700313BD1 /* QueryUtilities.swift */,
+				41C5010321FF645700313BD1 /* ScopeUtilities.swift */,
+				41C5010421FF645700313BD1 /* TokenUtilities.swift */,
+				4183E916220C911D001FA27B /* PresentationAttributes.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		41C5014F21FF64B300313BD1 /* Create pastebin */ = {
+			isa = PBXGroup;
+			children = (
+				41C5015521FF64B300313BD1 /* CreatePasteBinViewController.swift */,
+				41C5015421FF64B300313BD1 /* CreatePasteBinInteractor.swift */,
+				41C5015221FF64B300313BD1 /* CreatePasteBinPresenter.swift */,
+				41C5015021FF64B300313BD1 /* CreatePasteBinModels.swift */,
+				41C5015121FF64B300313BD1 /* CreatePasteBinRouter.swift */,
+				41C5015321FF64B300313BD1 /* CreatePasteBinWorker.swift */,
+			);
+			path = "Create pastebin";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41C5008F21FF635C00313BD1 /* Get tokens */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41C500A221FF635E00313BD1 /* Build configuration list for PBXNativeTarget "Get tokens" */;
+			buildPhases = (
+				41C5008C21FF635C00313BD1 /* Sources */,
+				41C5008D21FF635C00313BD1 /* Frameworks */,
+				41C5008E21FF635C00313BD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Get tokens";
+			productName = "Token Tester";
+			productReference = 41C5009021FF635C00313BD1 /* Get tokens.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41C5008821FF635C00313BD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Warwick McNaughton";
+				TargetAttributes = {
+					41C5008F21FF635C00313BD1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 41C5008B21FF635C00313BD1 /* Build configuration list for PBXProject "Get tokens" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41C5008721FF635C00313BD1;
+			productRefGroup = 41C5009121FF635C00313BD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41C5008F21FF635C00313BD1 /* Get tokens */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41C5008E21FF635C00313BD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C500AB21FF638C00313BD1 /* Authenticate with PoP tokens.md in Resources */,
+				41C5009E21FF635E00313BD1 /* LaunchScreen.storyboard in Resources */,
+				41C500AC21FF638C00313BD1 /* Design.md in Resources */,
+				41C5009B21FF635E00313BD1 /* Assets.xcassets in Resources */,
+				41C500AE21FF638C00313BD1 /* Authenticate using basic OIDC.md in Resources */,
+				41C500AA21FF638C00313BD1 /* README.md in Resources */,
+				41C5009921FF635C00313BD1 /* Main.storyboard in Resources */,
+				41C500AD21FF638C00313BD1 /* WebID-OIDC.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41C5008C21FF635C00313BD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C5013721FF645800313BD1 /* JOSEHeader.swift in Sources */,
+				41C5013C21FF645800313BD1 /* PoPToken.swift in Sources */,
+				41C5014821FF645800313BD1 /* AuthenticationSession.swift in Sources */,
+				41C5015821FF64B300313BD1 /* CreatePasteBinPresenter.swift in Sources */,
+				41C5014A21FF645800313BD1 /* QueryUtilities.swift in Sources */,
+				41C0AF002203B45900C5CE4A /* AnyCodable.swift in Sources */,
+				41C5010921FF645800313BD1 /* Signer.swift in Sources */,
+				41C5013521FF645800313BD1 /* Payload.swift in Sources */,
+				41C5012321FF645800313BD1 /* JWK.swift in Sources */,
+				41C5011C21FF645800313BD1 /* DataRSAPublicKey.swift in Sources */,
+				41C5013021FF645800313BD1 /* DataConvertible.swift in Sources */,
+				41C500B221FF63E400313BD1 /* AppDelegate.swift in Sources */,
+				41C5012D21FF645800313BD1 /* Decrypter.swift in Sources */,
+				41C5014B21FF645800313BD1 /* ScopeUtilities.swift in Sources */,
+				41C5012021FF645800313BD1 /* SymmetricKeys.swift in Sources */,
+				41C5015B21FF64B300313BD1 /* CreatePasteBinViewController.swift in Sources */,
+				41C5011D21FF645800313BD1 /* DataECPublicKey.swift in Sources */,
+				41C5013621FF645800313BD1 /* Serializer.swift in Sources */,
+				41C5014321FF645800313BD1 /* RegistrationRequest.swift in Sources */,
+				41C5012621FF645800313BD1 /* SymmetricKeyCodable.swift in Sources */,
+				41C5011021FF645800313BD1 /* AESEncrypter.swift in Sources */,
+				41C5012921FF645800313BD1 /* JWKSet.swift in Sources */,
+				41C5015621FF64B300313BD1 /* CreatePasteBinModels.swift in Sources */,
+				41C5011421FF645800313BD1 /* SecKeyECPrivateKey.swift in Sources */,
+				41C0AF042203B46E00C5CE4A /* AnyEncodable.swift in Sources */,
+				41C5015A21FF64B300313BD1 /* CreatePasteBinInteractor.swift in Sources */,
+				41C5013321FF645800313BD1 /* Algorithms.swift in Sources */,
+				41C5010821FF645800313BD1 /* Verifier.swift in Sources */,
+				41C500B021FF63BB00313BD1 /* ViewController.swift in Sources */,
+				41C5010721FF645800313BD1 /* JWS.swift in Sources */,
+				41C5013421FF645800313BD1 /* Deserializer.swift in Sources */,
+				41C5013B21FF645800313BD1 /* AuthenticateWithProviderModels.swift in Sources */,
+				41C5014421FF645800313BD1 /* TokenRequest.swift in Sources */,
+				41C5014E21FF645800313BD1 /* RegistrationResponse.swift in Sources */,
+				41C5014121FF645800313BD1 /* AuthenticateWithProviderInteractor.swift in Sources */,
+				41C5014C21FF645800313BD1 /* TokenUtilities.swift in Sources */,
+				41C5011821FF645800313BD1 /* DataECPrivateKey.swift in Sources */,
+				41C5010B21FF645800313BD1 /* AESDecrypter.swift in Sources */,
+				41C5010A21FF645800313BD1 /* JWSHeader.swift in Sources */,
+				41C5013F21FF645800313BD1 /* AuthState.swift in Sources */,
+				41C5014521FF645800313BD1 /* TokenResponse.swift in Sources */,
+				41C5010F21FF645800313BD1 /* RSASigner.swift in Sources */,
+				41C5014721FF645800313BD1 /* AuthorizationRequest.swift in Sources */,
+				41C5011A21FF645800313BD1 /* EC.swift in Sources */,
+				41C5014621FF645800313BD1 /* AuthorizationResponse.swift in Sources */,
+				41C5015921FF64B300313BD1 /* CreatePasteBinWorker.swift in Sources */,
+				41C5012121FF645800313BD1 /* JWKSetCodable.swift in Sources */,
+				41C5013A21FF645800313BD1 /* AuthenticateWithProviderRouter.swift in Sources */,
+				41C5014D21FF645800313BD1 /* TokenManager.swift in Sources */,
+				41C5012421FF645800313BD1 /* ASN1DERParsing.swift in Sources */,
+				41C5012821FF645800313BD1 /* ECKeys.swift in Sources */,
+				41C5013121FF645800313BD1 /* DataExtensions.swift in Sources */,
+				41C5012B21FF645800313BD1 /* ASN1DEREncoding.swift in Sources */,
+				41C5012C21FF645800313BD1 /* Encrypter.swift in Sources */,
+				41C5012F21FF645800313BD1 /* JWEHeader.swift in Sources */,
+				41C5011221FF645800313BD1 /* ECVerifier.swift in Sources */,
+				41C5011E21FF645800313BD1 /* SecKeyRSAPublicKey.swift in Sources */,
+				41C5012721FF645800313BD1 /* JWKParameters.swift in Sources */,
+				41C5011121FF645800313BD1 /* RSAVerifier.swift in Sources */,
+				41C5011721FF645800313BD1 /* HMAC.swift in Sources */,
+				41C5012221FF645800313BD1 /* ECKeyCodable.swift in Sources */,
+				41C5013221FF645800313BD1 /* JOSESwiftError.swift in Sources */,
+				41C5010D21FF645800313BD1 /* ECSigner.swift in Sources */,
+				41C5011F21FF645800313BD1 /* RSAKeyCodable.swift in Sources */,
+				41C5014921FF645800313BD1 /* ErrorUtilities.swift in Sources */,
+				41C5012E21FF645800313BD1 /* JWE.swift in Sources */,
+				4183E917220C911D001FA27B /* PresentationAttributes.swift in Sources */,
+				41C5010C21FF645800313BD1 /* RSAEncrypter.swift in Sources */,
+				41C5013E21FF645800313BD1 /* IDToken.swift in Sources */,
+				41C5012A21FF645800313BD1 /* JWKExtensions.swift in Sources */,
+				41C5011521FF645800313BD1 /* AES.swift in Sources */,
+				41C5011921FF645800313BD1 /* SecureRandom.swift in Sources */,
+				41C0AF022203B46200C5CE4A /* AnyDecodable.swift in Sources */,
+				41C5010E21FF645800313BD1 /* RSADecrypter.swift in Sources */,
+				41C5011621FF645800313BD1 /* SecKeyECPublicKey.swift in Sources */,
+				41C5011B21FF645800313BD1 /* DataSymmetricKey.swift in Sources */,
+				41C5015721FF64B300313BD1 /* CreatePasteBinRouter.swift in Sources */,
+				41C5012521FF645800313BD1 /* RSAKeys.swift in Sources */,
+				41C5014221FF645800313BD1 /* AuthenticateWithProviderViewController.swift in Sources */,
+				41C5011321FF645800313BD1 /* RSA.swift in Sources */,
+				41C5013821FF645800313BD1 /* AuthenticateWithProviderWorker.swift in Sources */,
+				41C5014021FF645800313BD1 /* ProviderConfiguration.swift in Sources */,
+				41C5013921FF645800313BD1 /* AuthenticateWithProviderPresenter.swift in Sources */,
+				41C5013D21FF645800313BD1 /* AccessToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		41C5009721FF635C00313BD1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41C5009821FF635C00313BD1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41C5009C21FF635E00313BD1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41C5009D21FF635E00313BD1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41C500A021FF635E00313BD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41C500A121FF635E00313BD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41C500A321FF635E00313BD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4XR3G25JL;
+				INFOPLIST_FILE = "Get tokens/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wm.Get-tokens";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41C500A421FF635E00313BD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4XR3G25JL;
+				INFOPLIST_FILE = "Get tokens/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wm.Get-tokens";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41C5008B21FF635C00313BD1 /* Build configuration list for PBXProject "Get tokens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41C500A021FF635E00313BD1 /* Debug */,
+				41C500A121FF635E00313BD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41C500A221FF635E00313BD1 /* Build configuration list for PBXNativeTarget "Get tokens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41C500A321FF635E00313BD1 /* Debug */,
+				41C500A421FF635E00313BD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41C5008821FF635C00313BD1 /* Project object */;
+}
