@@ -76,6 +76,9 @@ Install it.
 
 Go to General - About - Certificate Trust Settings and enable trust for this certificate.
 
+Email the server's public key and in your app open it and install it as a profile.
+
+
 ## Handle challenges in your app
 In a desktop browser you will might have seen a message that a site is unsafe, asking for confirmation to proceed.  Your app needs to handle this challenge.
 
