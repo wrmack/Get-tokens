@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4183E917220C911D001FA27B /* PresentationAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183E916220C911D001FA27B /* PresentationAttributes.swift */; };
+		419729D2220D0B670073EF55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419729D1220D0B670073EF55 /* ViewController.swift */; };
 		41C0AF002203B45900C5CE4A /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0AEFF2203B45900C5CE4A /* AnyCodable.swift */; };
 		41C0AF022203B46200C5CE4A /* AnyDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0AF012203B46200C5CE4A /* AnyDecodable.swift */; };
 		41C0AF042203B46E00C5CE4A /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0AF032203B46E00C5CE4A /* AnyEncodable.swift */; };
@@ -19,7 +20,6 @@
 		41C500AC21FF638C00313BD1 /* Design.md in Resources */ = {isa = PBXBuildFile; fileRef = 41C500A721FF638C00313BD1 /* Design.md */; };
 		41C500AD21FF638C00313BD1 /* WebID-OIDC.md in Resources */ = {isa = PBXBuildFile; fileRef = 41C500A821FF638C00313BD1 /* WebID-OIDC.md */; };
 		41C500AE21FF638C00313BD1 /* Authenticate using basic OIDC.md in Resources */ = {isa = PBXBuildFile; fileRef = 41C500A921FF638C00313BD1 /* Authenticate using basic OIDC.md */; };
-		41C500B021FF63BB00313BD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500AF21FF63BB00313BD1 /* ViewController.swift */; };
 		41C500B221FF63E400313BD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500B121FF63E400313BD1 /* AppDelegate.swift */; };
 		41C5010721FF645800313BD1 /* JWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500B721FF645700313BD1 /* JWS.swift */; };
 		41C5010821FF645800313BD1 /* Verifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C500B821FF645700313BD1 /* Verifier.swift */; };
@@ -103,6 +103,7 @@
 
 /* Begin PBXFileReference section */
 		4183E916220C911D001FA27B /* PresentationAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationAttributes.swift; sourceTree = "<group>"; };
+		419729D1220D0B670073EF55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		41C0AEFF2203B45900C5CE4A /* AnyCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
 		41C0AF012203B46200C5CE4A /* AnyDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyDecodable.swift; sourceTree = "<group>"; };
 		41C0AF032203B46E00C5CE4A /* AnyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
@@ -116,7 +117,6 @@
 		41C500A721FF638C00313BD1 /* Design.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Design.md; sourceTree = "<group>"; };
 		41C500A821FF638C00313BD1 /* WebID-OIDC.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "WebID-OIDC.md"; sourceTree = "<group>"; };
 		41C500A921FF638C00313BD1 /* Authenticate using basic OIDC.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Authenticate using basic OIDC.md"; sourceTree = "<group>"; };
-		41C500AF21FF63BB00313BD1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../../../../../../Solid/POD browser/POD browser/ViewController.swift"; sourceTree = "<group>"; };
 		41C500B121FF63E400313BD1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41C500B721FF645700313BD1 /* JWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWS.swift; sourceTree = "<group>"; };
 		41C500B821FF645700313BD1 /* Verifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Verifier.swift; sourceTree = "<group>"; };
@@ -247,7 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				41C500B121FF63E400313BD1 /* AppDelegate.swift */,
-				41C500AF21FF63BB00313BD1 /* ViewController.swift */,
+				419729D1220D0B670073EF55 /* ViewController.swift */,
 				41C5009721FF635C00313BD1 /* Main.storyboard */,
 				41C5009A21FF635E00313BD1 /* Assets.xcassets */,
 				41C5009C21FF635E00313BD1 /* LaunchScreen.storyboard */,
@@ -543,7 +543,6 @@
 				41C5015A21FF64B300313BD1 /* CreatePasteBinInteractor.swift in Sources */,
 				41C5013321FF645800313BD1 /* Algorithms.swift in Sources */,
 				41C5010821FF645800313BD1 /* Verifier.swift in Sources */,
-				41C500B021FF63BB00313BD1 /* ViewController.swift in Sources */,
 				41C5010721FF645800313BD1 /* JWS.swift in Sources */,
 				41C5013421FF645800313BD1 /* Deserializer.swift in Sources */,
 				41C5013B21FF645800313BD1 /* AuthenticateWithProviderModels.swift in Sources */,
@@ -575,6 +574,7 @@
 				41C5012721FF645800313BD1 /* JWKParameters.swift in Sources */,
 				41C5011121FF645800313BD1 /* RSAVerifier.swift in Sources */,
 				41C5011721FF645800313BD1 /* HMAC.swift in Sources */,
+				419729D2220D0B670073EF55 /* ViewController.swift in Sources */,
 				41C5012221FF645800313BD1 /* ECKeyCodable.swift in Sources */,
 				41C5013221FF645800313BD1 /* JOSESwiftError.swift in Sources */,
 				41C5010D21FF645800313BD1 /* ECSigner.swift in Sources */,
