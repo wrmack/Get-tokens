@@ -16,9 +16,12 @@ In order to interact over the network using https, keys are needed for solid ser
 Follow the instructions here:
 [Apple instructions](https://developer.apple.com/library/archive/technotes/tn2326/_index.html#//apple_ref/doc/uid/DTS40014136)
 
-Ensure the dNS name is the network name you identified above.
+Ensure the dNS name is the network name you identified above with an asterisk in front (a wildcard) so that it will work for all subdomains:
+
+`*.{your network name}.local`
 
 You will end up exporting: a root certificate (.cer file), server.crt (containing the public key) and server.key (the private key).
+
 
 ## Setup solid server
 npm must be installed - I used Homebrew.
@@ -72,6 +75,20 @@ On device open the email and open the attachment.  In a simulator I used Safari 
 Install it.
 
 Go to General - About - Certificate Trust Settings and enable trust for this certificate.
+
+## Handle challenges in your app
+In a desktop browser you will might have seen a message that a site is unsafe, asking for confirmation to proceed.  Your app needs to handle this challenge.
+
+* add URLSessionDelegate to your class
+* add:
+```
+func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+    completionHandler(
+        .useCredential, 
+        URLCredential(trust: challenge.protectionSpace.serverTrust!)
+    )
+}
+```
 
 ## Setup Visual Studio Code
 In Visual Studio Code open the top level folder for the server. 
