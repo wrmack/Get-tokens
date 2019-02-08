@@ -54,6 +54,16 @@ Your /etc/hosts file should include the following entries.  This file simply map
 For example use nano to edit it:
 `sudo nano /etc/hosts`
 
+A user that you register with solid-server has to be added as a subdomain:
+
+```
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
+::1             localhost
+127.0.0.1       *{your network name}.local
+127.0.0.1       {username}.{your network name}.local			
+```
+
 ## Setup your device
 Email the root certificate (*.cer) as an attachment
 
