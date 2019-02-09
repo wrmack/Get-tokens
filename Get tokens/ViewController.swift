@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func unwindAuthenticationToHere(segue: UIStoryboardSegue) {
-        print("Unwind from viewing pod")
+        print("Unwinding from authenticating view controller")
     }
     
 

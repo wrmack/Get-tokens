@@ -88,7 +88,6 @@ class AuthenticateWithProviderInteractor: NSObject, AuthenticateWithProviderBusi
             }
             
             DispatchQueue.main.async {
-                print("Configuration: \(configuration)")
                 callback(configuration)
                 session.invalidateAndCancel()
             }
@@ -211,7 +210,6 @@ class AuthenticateWithProviderInteractor: NSObject, AuthenticateWithProviderBusi
             // Success
             self.writeToTextView(status: "------------------------\n\n", message: nil)
             print("Got registration response: \(registrationResponse.description())")
-            print("Configuration: \(configuration!) \nregistration response: \(registrationResponse)")
             
             DispatchQueue.main.async(execute: {
                 callback(configuration, registrationResponse)
@@ -381,7 +379,7 @@ class AuthenticateWithProviderInteractor: NSObject, AuthenticateWithProviderBusi
     }
     
     func urlSession(_ session: URLSession, task: URLSessionTask, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-        print("Here2")
+        print("urlSession(_:task:didReceive:completionHandler) called")
     }
     
     

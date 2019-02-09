@@ -129,7 +129,6 @@ class AuthenticateWithProviderViewController: UIViewController, AuthenticateWith
     func registerClient(configuration: ProviderConfiguration) {
         let request = AuthenticateWithProvider.RegisterClient.Request(configuration: configuration) 
         interactor?.registerClient(request: request, callback: { configuration, response in
-            //print(configuration!.description())
             print(response!.description())
             self.authenticateWithProvider(configuration: configuration!, clientID: (response?.clientID)!, clientSecret: response?.clientSecret)
         })
