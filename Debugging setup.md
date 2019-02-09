@@ -116,4 +116,12 @@ You will now be able to debug interaction between the app and solid-server, for 
 ## Using a browser
 As a separate exercise, simply use web inspector in Safari to view network requests and responses for the solid-auth-client.   The login popup makes this difficult so use the solid-auth-client demo app (as described on its README page)
 
+## Decoding tokens
+The tokens that are returned are displayed in the console.  Use [jwt.io](https://jwt.io) to decode them.
 
+## Issue with token endpoint not loading cnfKey
+Native apps use the authorization code flow through which tokens are requested from the token endpoint.  Browsers use the implicit flow in which authorization and tokens are requested from the authorization endpoint.
+
+At the time of testing this app solid-server did not have the functionality to deliver a proof-of-possession (PoP) token.  [Issue](https://github.com/solid/oidc-op/issues/15#issue-407032755).
+
+I got this working by copying and pasting the relevant code from AuthenticationRequest.js to TokenRequest.js (in oidc-op).  This is basically `decodeRequestParam (request)` and all its dependencies. 

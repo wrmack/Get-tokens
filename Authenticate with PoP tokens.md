@@ -62,7 +62,7 @@ The external agent redirects back to the app with a callback url containing as q
 
 ## Step 4
 ### Request an access token
-This changes from the basic OIDC process.
+This changes from the basic OIDC process.  The token request includes a key to be confirmed by the server as a proof-of-possession (PoP) token.
 
 Using asymmetric keys.
 
@@ -88,25 +88,53 @@ The response data contains:
 * expires_in
 * refresh_token
 
-The access and id tokens are signed JWT tokens and contain:
+The access and id tokens are signed JWT tokens.  Use [jwt.io](https://jwt.io) for decoding.
 
-* iss
-* sub
-* aud
-* exp
-* iat
-* jti
-* nonce (id token)
-* azp (id token)
-* at_hash (id token)
-* scope (access token)
+
+The access token payload contains the following claims:
+
+
+	"iss": "https://xxxxxxxxxx",
+	"sub": "https://xxxxxxxxxx/profile/card#me",
+	"aud": "a2aed450dc0f05ba188c49f8c562adf3",
+	"exp": 1550941718,
+	"iat": 1549732118,
+	"jti": "eec693cae9b34067",
+	"scope": "openid profile webid"
+
+
+The ID token payload contains the following claims, which includes a `cnf` claim:
+
+	
+	"iss": "https://xxxxxxxxxx",  
+	"sub": "https://xxxxxxxx/profile/card#me",  
+	"aud": "a2aed450dc0f05ba188c49f8c562adf3",
+	"exp": 1550941718,
+	"iat": 1549732118,
+	"jti": "e4c78e616d5c6e80",
+	"nonce": "XaCZg4a8nrdTtFY5MMqNFfhMr_RB_SQrOLbzqBxyrkM",
+	"azp": "a2aed450dc0f05ba188c49f8c562adf3",
+	"cnf": {
+	    "jwk": {
+	        "use": "sig",
+	        "key_ops": [
+	        "verify",
+	        "verify"
+	        ],
+	        "ext": true,
+	        "alg": "RS256",
+	        "kty": "RSA",
+	        "e": "AQAB",
+	        "n": "p3-I0Yxxxxxxxxx
+	    }
+	},
+	"at_hash": "PVw479Y3ntS1OVrIeacyyw"
+
 
 ## Step 5
-### Store the access token
-The access token is used to gain access to protected resources.
+### Store the tokens
+Currently working on how to gain access to protected resources using the tokens.
 
-
-View online: [Markdown Live Preview]( https://markdownlivepreview.com)
 
 
 
