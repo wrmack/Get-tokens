@@ -16,9 +16,9 @@ In order to interact over the network using https, keys are needed for solid ser
 Follow the instructions here:
 [Apple instructions](https://developer.apple.com/library/archive/technotes/tn2326/_index.html#//apple_ref/doc/uid/DTS40014136)
 
-Ensure the dNS name is the network name you identified above with an asterisk in front (a wildcard) so that it will work for all subdomains:
+Ensure the dNS name is the network name you identified above:
 
-`*.{your network name}.local`
+`{your network name}.local`
 
 You will end up exporting: a root certificate (.cer file), server.crt (containing the public key) and server.key (the private key).
 
