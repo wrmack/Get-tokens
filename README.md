@@ -6,7 +6,7 @@ The token request contains a key for exchange with a proof-of-possession (PoP) c
 
 ## Use case
 ### Authenticate with provider
-User enters their provider's uri such as `https://username.inrupt.net`
+User enters their provider's uri.  Both of these worked:  `https://username.inrupt.net`, `https://inrupt.net`
 
 The process of discoverying the provider's configuration, registering the client, getting an authorization grant and exchanging that for tokens, is displayed.  Detailed information is printed to the console.
 

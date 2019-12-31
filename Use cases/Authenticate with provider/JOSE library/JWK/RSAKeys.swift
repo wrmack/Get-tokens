@@ -142,8 +142,8 @@ public struct RSAPublicKey: JWK {
         // to represent their value as required.
         // Therefore Base64url(component) == Base64urlUInt(component).
         self.init(
-//            modulus: components.modulus.base64URLEncodedString(),
-            modulus: "p3-I0YKDFddw3T0bEqapB5lBhlExM_j9N3HWv85AO_8QLJTsQrAWHk5I9W-dzVh1HlCO2Fp58r292gOm4GfAT9C_2tbRjOr12osGh57VlLb6vKX1_34iwOTARCUVckxLemeKiHBURIpdEG1AhFIcGzkgh2VkpE1oZ-oioZLpiVYDdtA9n82dFNAJXw9dEcrnWECj8sJXzjm7udftWhvn1AYc44rFbqBAKYdCPo1-9xY6OZ2lnM4CxGs1yx1mWRe2zBVRdW143fLxMVOifYTLsV0ndhydv7U1YoxjuhYZgVWOgCPJYEEWq0OeH8XyyQDCFItx1bJGCaEQgUGczzGczw",
+            modulus: components.modulus.base64URLEncodedString(),
+//            modulus: "p3-I0YKDFddw3T0bEqapB5lBhlExM_j9N3HWv85AO_8QLJTsQrAWHk5I9W-dzVh1HlCO2Fp58r292gOm4GfAT9C_2tbRjOr12osGh57VlLb6vKX1_34iwOTARCUVckxLemeKiHBURIpdEG1AhFIcGzkgh2VkpE1oZ-oioZLpiVYDdtA9n82dFNAJXw9dEcrnWECj8sJXzjm7udftWhvn1AYc44rFbqBAKYdCPo1-9xY6OZ2lnM4CxGs1yx1mWRe2zBVRdW143fLxMVOifYTLsV0ndhydv7U1YoxjuhYZgVWOgCPJYEEWq0OeH8XyyQDCFItx1bJGCaEQgUGczzGczw",
             exponent: components.exponent.base64URLEncodedString(),
             additionalParameters: parameters
         )

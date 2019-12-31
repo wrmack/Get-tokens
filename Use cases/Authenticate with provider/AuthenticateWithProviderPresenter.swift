@@ -27,7 +27,7 @@ class AuthenticateWithProviderPresenter: AuthenticateWithProviderPresentationLog
         if let message = response.message!["message"] {
             messageString = String()
             if message is Data {
-                let json = try? JSONSerialization.jsonObject(with: message as! Data, options: []) as! [String : Any]
+                let json = try? JSONSerialization.jsonObject(with: message as! Data, options: []) as? [String : Any]
                 for key in json!.keys {
                     messageString!.append(key + ": ")
                     let value = json![key]

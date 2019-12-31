@@ -80,7 +80,7 @@ Email the server's public key and in your app open it and install it as a profil
 
 
 ## Handle challenges in your app
-In a desktop browser you will might have seen a message that a site is unsafe, asking for confirmation to proceed.  Your app needs to handle this challenge.
+In a desktop browser you might have seen a message that a site is unsafe, asking for confirmation to proceed.  Your app needs to handle this challenge.
 
 * add URLSessionDelegate to your class
 * add:
@@ -104,7 +104,7 @@ For example:
 `/Users/{your home directory}/{path to directory you created}/node_modules/solid-server/bin/solid start`
 
 In VSC go to: 
-`View - Command Pallette...`
+`View - Command Palette...`
 
 Then: 
 `Debug: Attach to node process`
@@ -122,6 +122,6 @@ The tokens that are returned are displayed in the console.  Use [jwt.io](https:/
 ## Issue with token endpoint not loading cnfKey
 Native apps use the authorization code flow through which tokens are requested from the token endpoint.  Browsers use the implicit flow in which authorization and tokens are requested from the authorization endpoint.
 
-At the time of testing this app solid-server did not have the functionality to deliver a proof-of-possession (PoP) token.  [Issue](https://github.com/solid/oidc-op/issues/15#issue-407032755).
+At the time of testing this app solid-server did not have the functionality to deliver a proof-of-possession (PoP) token from the token endpoint.  [Issue](https://github.com/solid/oidc-op/issues/15#issue-407032755).
 
 I got this working by copying and pasting the relevant code from AuthenticationRequest.js to TokenRequest.js (in oidc-op).  This is basically `decodeRequestParam (request)` and all its dependencies. 
