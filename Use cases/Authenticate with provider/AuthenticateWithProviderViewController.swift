@@ -198,3 +198,4 @@ class AuthenticateWithProviderViewController: UIViewController, AuthenticateWith
         processMessage(message: userInfo as? [String : Any])
     }
 }
+

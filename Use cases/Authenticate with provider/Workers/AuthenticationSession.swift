@@ -1,5 +1,5 @@
 //
-//  HandleAuthenticationSession.swit
+//  HandleAuthenticationSession.swift
 //  POD browser
 //
 //  Created by Warwick McNaughton on 19/01/19.
@@ -23,6 +23,7 @@ class AuthenticationSession: NSObject, URLSessionDelegate  {
     
     func fetchAuthState(authorizationRequest: AuthorizationRequest?, presentingViewController: UIViewController?, callback: @escaping (AuthState?, Error?) -> Void) -> AuthenticationSession {
         self.authorizationRequest = authorizationRequest
+        self.presentingViewController = presentingViewController
         pendingauthorizationFlowCallback = callback
         
         // Presents an external user-agent which returns with an authorization response comprising the authorization code and a state parameter
@@ -73,6 +74,7 @@ class AuthenticationSession: NSObject, URLSessionDelegate  {
             }
         })
         webAuthenticationVC = authenticationVC
+        authenticationVC.presentationContextProvider = presentingViewController as? ASWebAuthenticationPresentationContextProviding
         openedSafari = authenticationVC.start()
 
         
@@ -379,4 +381,12 @@ class AuthenticationSession: NSObject, URLSessionDelegate  {
     func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
         completionHandler(.useCredential, URLCredential(trust: challenge.protectionSpace.serverTrust!))
     }
+    
 }
+extension AuthenticateWithProviderViewController: ASWebAuthenticationPresentationContextProviding {
+    func presentationAnchor(for session: ASWebAuthenticationSession) -> ASPresentationAnchor {
+        let window = UIApplication.shared.windows.first { $0.isKeyWindow }
+        return window ?? ASPresentationAnchor()
+    }
+}
+
