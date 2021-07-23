@@ -91,7 +91,7 @@ class RegistrationResponse: NSObject {
         //    additionalParameters: %@, request: %@>
         //    """, NSStringFromClass(type(of: self).self), self, clientID!, clientIDIssuedAt! as CVarArg, OIDTokenUtilities.redact(clientSecret)!, clientSecretExpiresAt! as CVarArg, OIDTokenUtilities.redact(registrationAccessToken)!, registrationClientURI! as CVarArg, additionalParameters!, request as! CVarArg)
         
-        let d =  "\n=============\nOIDRegistrationResponse \nclientID: \(clientID!) \nclientIDIssuedAt: \(clientIDIssuedAt!) \nclientSecret: \(TokenUtilities.redact(clientSecret)!) \nclientSecretExpiresAt: \(clientSecretExpiresAt!) \nregistrationAccessToken: \(TokenUtilities.redact(registrationAccessToken)!) \nregistrationClientURI: \(registrationClientURI!) \nadditionalParameters: \(additionalParameters) \nrequest: \(request!.description)\n============="
+        let d =  "\n=============\nOIDRegistrationResponse \nclientID: \(clientID!) \nclientIDIssuedAt: \(String(describing: clientIDIssuedAt)) \nclientSecret: \(TokenUtilities.redact(clientSecret)!) \nclientSecretExpiresAt: \(String(describing: clientSecretExpiresAt)) \nregistrationAccessToken: \(String(describing: TokenUtilities.redact(registrationAccessToken))) \nregistrationClientURI: \(String(describing: registrationClientURI)) \nadditionalParameters: \(additionalParameters) \nrequest: \(request!.description)\n============="
         return d
     }
     

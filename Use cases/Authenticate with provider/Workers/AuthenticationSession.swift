@@ -203,32 +203,32 @@ class AuthenticationSession: NSObject, URLSessionDelegate  {
             let statusCode: Int? = HTTPURLResponse?.statusCode
             
             if statusCode != 200 {
-            // A server error occurred.
-            let serverError = ErrorUtilities.HTTPError(HTTPResponse: HTTPURLResponse!, data: data)
-            // HTTP 4xx may indicate an RFC6749 Section 5.2 error response, attempts to parse as such.
-            if statusCode! >= 400 && statusCode! < 500 {
-                let json = ((try? JSONSerialization.jsonObject(with: data!, options: []) as? [String : (NSObject & NSCopying)]) as [String : (NSObject & NSCopying)]??)
-                // If the HTTP 4xx response parses as JSON and has an 'error' key, it's an OAuth error.
-                // These errors are special as they indicate a problem with the authorization grant.
-                if json?![OIDOAuthErrorFieldError] != nil {
-                    let oauthError = ErrorUtilities.OAuthError( OAuthErrorDomain: OIDOAuthTokenErrorDomain, OAuthResponse: json!, underlyingError: serverError)
-                    DispatchQueue.main.async(execute: {
-                        callback(nil, oauthError)
-                    })
-                    return
+                // A server error occurred.
+                let serverError = ErrorUtilities.HTTPError(HTTPResponse: HTTPURLResponse!, data: data)
+                // HTTP 4xx may indicate an RFC6749 Section 5.2 error response, attempts to parse as such.
+                if statusCode! >= 400 && statusCode! < 500 {
+                    let json = ((try? JSONSerialization.jsonObject(with: data!, options: []) as? [String : (NSObject & NSCopying)]) as [String : (NSObject & NSCopying)]??)
+                    // If the HTTP 4xx response parses as JSON and has an 'error' key, it's an OAuth error.
+                    // These errors are special as they indicate a problem with the authorization grant.
+                    if json?![OIDOAuthErrorFieldError] != nil {
+                        let oauthError = ErrorUtilities.OAuthError( OAuthErrorDomain: OIDOAuthTokenErrorDomain, OAuthResponse: json!, underlyingError: serverError)
+                        DispatchQueue.main.async(execute: {
+                            callback(nil, oauthError)
+                        })
+                        return
+                    }
                 }
-            }
-            
-            // Status code indicates this is an error, but not an RFC6749 Section 5.2 error.
-            var errorDescription: String? = nil
-            if let anURL = URLRequest.url {
-                errorDescription = "Non-200 HTTP response (\(statusCode!)) making token request to '\(anURL)'."
-            }
-            let returnedError: NSError? = ErrorUtilities.error(code: ErrorCode.ServerError, underlyingError: serverError, description: errorDescription)
-            DispatchQueue.main.async(execute: {
-                callback(nil, returnedError)
-            })
-            return
+                
+                // Status code indicates this is an error, but not an RFC6749 Section 5.2 error.
+                var errorDescription: String? = nil
+                if let anURL = URLRequest.url {
+                    errorDescription = "Non-200 HTTP response (\(statusCode!)) making token request to '\(anURL)'."
+                }
+                let returnedError: NSError? = ErrorUtilities.error(code: ErrorCode.ServerError, underlyingError: serverError, description: errorDescription)
+                DispatchQueue.main.async(execute: {
+                    callback(nil, returnedError)
+                })
+                return
             }
             
             var json:[String : (NSObject & NSCopying)]?
